@@ -33,4 +33,8 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index)
+    display_board
+  else
+    puts "Please enter a VALID input."
+  end
 end
